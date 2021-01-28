@@ -505,9 +505,9 @@ body.bg-is-dark nav li:nth-of-type(2n) {
     text-decoration: underline;
 }
 
-.project.active img {
+/* .project.active img {
     transform: rotate(-45deg);
-}
+} */
 
 .project.active .project-content {
     height: auto;
