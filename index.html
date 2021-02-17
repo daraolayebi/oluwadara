@@ -11,20 +11,22 @@
 </head>
 
 <body>
-    <nav class="main-nav">
-        <ul class="nav-list">
-            <!-- <li class="name-nav is-animated">
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <!-- <li class="name-nav is-animated">
                 <a href="index.html">oluwadara</a>
             </li> -->
-            <li>dara olayebi</li>
-            <li>
-                <a href="#work">projects</a>
-            </li>
-            <li>
-                <a href="#contact">contact</a>
-            </li>
-        </ul>
-    </nav>
+                <li>dara olayebi</li>
+                <li>
+                    <a href="#work">projects</a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="intro">
             <div class="container">
@@ -71,7 +73,7 @@
                     <div class="heading-flex">
                         <h2 class="heading">projects</h2>
                         <div>
-                            <h3>0<span id="activeSlide"></span>/05</h3>
+                            <h3 class="project-numbering">0<span id="activeSlide"></span>/05</h3>
                             <div class="projects-arrows">
                                 <div class="carousel__button--prev"><img class="arrow-left"
                                         src="./images/arrow-left.svg"
@@ -89,12 +91,15 @@
                             <div class="carousel">
                                 <div class="carousel__photo initial">
                                     <div class="project">
-                                        <video class="video"
+                                        <!-- <video class="video"
                                             autoplay
                                             loop>
                                             <source src="images/surviving-2020.mov"
                                                 type="video/mp4">
-                                        </video>
+                                        </video> -->
+                                        <img class="project-thumbnail"
+                                            src="images/work/surviving-2020.png"
+                                            alt="">
                                         <div class="project-desc">
                                             <h3 class="project-name">our 2020 stories</h3>
                                             <p>at the peak of the COVID-19 pandemic, i came up with the idea of a project i coined 'surviving 2020' - a website that would connect people through stories and shared experiences by inviting them to document significant moments of their year 2020.<br><br>since its inception, there have been 63 responses from people in
@@ -108,12 +113,15 @@
                                 </div>
                                 <div class="carousel__photo">
                                     <div class="project">
-                                        <video class="video"
+                                        <!-- <video class="video"
                                             autoplay
                                             loop>
                                             <source src="images/ladiesdotech.mov"
                                                 type="video/mp4">
-                                        </video>
+                                        </video> -->
+                                        <img class="project-thumbnail"
+                                            src="images/work/ladies-do-tech.png"
+                                            alt="">
                                         <div class="project-desc">
                                             <h3 class="project-name">ladies do tech</h3>
                                             <p>this website is the product of several conversations with a friend where we discussed how to bring more women into tech.<br><br>the aim of ladies do tech is to build a community that would guide, mentor, and support young women who are trying to get into tech or who already work in the industry.</p>
@@ -125,12 +133,15 @@
                                 </div>
                                 <div class="carousel__photo">
                                     <div class="project">
-                                        <video class="video"
+                                        <!-- <video class="video"
                                             autoplay
                                             loop>
                                             <source src="images/femihandbags.mov"
                                                 type="video/mp4">
-                                        </video>
+                                        </video> -->
+                                        <img class="project-thumbnail"
+                                            src="images/work/femihandbags.png"
+                                            alt="">
                                         <div class="project-desc">
                                             <h3 class="project-name">femihandbags</h3>
                                             <p>femihandbags is a leading handbag design and manufacturing company based in Nigeria.<br><br>as i built the company's official website, their goals were at the forefront of my mind - create a medium to market their products, showcase their brand, and ultimately reach new customers.</p>
@@ -221,7 +232,6 @@
                         href="https://medium.com/@DaraOlayebi">medium</a>
                 </li>
             </ul>
-            <small>&copy; 2021</small>
         </div>
     </footer>
     <script src="./js/index.js"></script>
