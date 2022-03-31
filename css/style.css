@@ -282,6 +282,22 @@ em {
     color: #dda360;
 }
 
+.container {
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    width: 100%;
+    max-width: 1150px;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
 .section-title {
     margin-bottom: 60px;
 }
@@ -294,9 +310,13 @@ em {
     position: relative;
 }
 
-.section-body.flex {
+.flex {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+.flex-start {
+    align-items: flex-start;
 }
 
 .interests a {
@@ -322,13 +342,13 @@ em {
 .work-item-inner {
     position: relative;
     padding: 30px;
-    background: #615659;
-    border-radius: 10px;
+    background: #605658;
+    border-radius: 5px;
     display: none;
 }
 
 .work-item-inner p {
-    /* max-width: 60%; */
+    max-width: 90%;
     padding-top: 30px;
 }
 
@@ -380,6 +400,7 @@ em {
 
 .img-trigger {
     position: relative;
+    display: inline-block;
 }
 
 .img-trigger:hover .img-floating {
@@ -387,13 +408,41 @@ em {
     visibility: visible;
 }
 
+.profile-image {
+    position: sticky;
+    top: 40px;
+    margin-left: 40px;
+}
+
 .profile {
-    border-radius: 10px;
-    order: -1;
-    border-radius: 240px;
-    max-width: 200px;
+    border-radius: 5px;
+    max-width: 400px;
     margin: 0 auto 30px;
-    filter: saturate(0.7);
+    filter: saturate(0.8);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        order: -1;
+        position: initial;
+        top: 0;
+        margin: 0;
+    }
+
+    .profile {
+        width: 100%;
+        /* max-width: 300px; */
+        object-fit: cover;
+        margin: 0 auto 60px;
+    }
 }
 
 footer ul li {
@@ -549,11 +598,6 @@ main {
 
 .center {
     text-align: center;
-}
-
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .name-container {
@@ -753,7 +797,6 @@ body.bg-is-dark nav li:nth-of-type(2n) {
 .u-sm-label {
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 15px;
     font-size: 14px;
 }
 
@@ -807,7 +850,7 @@ footer .nav-list li {
         flex-direction: row;
     }
     .profile {
-        margin-top: 40px;
+        margin-top: 80px;
     }
     .name-wrapper {
         margin-bottom: 10rem;
@@ -830,13 +873,6 @@ footer .nav-list li {
     }
     .about-me.centered {
         margin: auto;
-    }
-    .profile {
-        max-width: 350px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border-radius: 10px;
     }
     .section-title {
         position: sticky;
@@ -944,14 +980,10 @@ footer .nav-list li {
         font-size: 38px;
         line-height: 1.6;
     }
-    .container {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-    .container.small {
+    /* .container.small {
         max-width: 1200px;
         padding-left: 300px;
-    }
+    } */
     .intro {
         display: flex;
         align-items: center;
